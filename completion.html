@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onboarding Complete</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadCompletionData()">
+
+<div class="container py-5">
+    <!-- Header -->
+    <div class="completion-header text-center">
+        <h2>Onboarding Complete!</h2>
+        <p class="mb-0">Your shop is ready with the details below.</p>
+    </div>
+
+    <!-- Theme & Product Info -->
+    <div class="card section-card">
+        <h5>Theme & Product Info</h5>
+        <div class="section-body">
+            <p><strong>Theme:</strong> <span id="showTheme"></span></p>
+            <p><strong>Product Type:</strong> <span id="showType"></span></p>
+            <p><strong>Category:</strong> <span id="showCategory"></span></p>
+            <p><strong>Sub-Category:</strong> <span id="showSubCategory"></span></p>
+        </div>
+    </div>
+
+    <!-- Basic Product Details -->
+    <div class="card section-card">
+        <h5>Basic Details</h5>
+        <div class="section-body">
+            <p><strong>Product Name:</strong> <span id="showProductName"></span></p>
+            <p><strong>Description:</strong> <span id="showProductDescription"></span></p>
+            <p><strong>SKU Code:</strong> <span id="showSKU"></span></p>
+            <p><strong>Has HSN/SAC:</strong> <span id="showHSN"></span></p>
+            <p><strong>GST Inclusive:</strong> <span id="showGSTInclusive"></span></p>
+        </div>
+    </div>
+
+    <!-- Pricing Details -->
+    <div class="card section-card">
+        <h5>Pricing</h5>
+        <div class="section-body">
+            <p><strong>Net Price:</strong> <span id="showNetPrice"></span></p>
+            <p><strong>List Price:</strong> <span id="showListPrice"></span></p>
+            <p><strong>Discount %:</strong> <span id="showDiscount"></span></p>
+            <p><strong>GST Rate:</strong> <span id="showGSTRate"></span></p>
+            <p><strong>Shipping Charges:</strong> <span id="showShipping"></span></p>
+            <p><strong>Stock Level:</strong> <span id="showStock"></span></p>
+        </div>
+    </div>
+
+    <!-- Uploaded Images -->
+    <div class="card section-card">
+        <h5>Uploaded Images</h5>
+        <div class="section-body">
+            <div id="uploadedImages" class="d-flex flex-wrap mt-3"></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
